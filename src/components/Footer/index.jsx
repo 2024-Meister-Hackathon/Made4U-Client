@@ -6,19 +6,19 @@ const Footer = () => {
 		<S.Container>
 			<S.NavWrapper>
 				<S.Nav to={"/feed"}>
-					<img src="" alt="사진 1" />
+					<img src="" alt="피트" />
 				</S.Nav>
 				<S.Nav to={"/search"}>
-					<img src="" alt="사진 2" />
+					<img src="" alt="탐색" />
 				</S.Nav>
 				<S.Nav to={"/write"}>
-					<img src="" alt="사진 3" />
+					<img src="" alt="작성" />
 				</S.Nav>
 				<S.Nav to={"/subscribe"}>
-					<img src="" alt="사진 4" />
+					<img src="" alt="구독" />
 				</S.Nav>
 				<S.Nav to={"/myPage"}>
-					<img src="" alt="사진 5" />
+					<img src="" alt="마이페이지" />
 				</S.Nav>
 			</S.NavWrapper>
 		</S.Container>
