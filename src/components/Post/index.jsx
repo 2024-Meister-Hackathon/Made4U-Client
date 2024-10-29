@@ -29,15 +29,15 @@ const Post = () => {
 						<S.RecButton onClick={() => setRecActive(true)} />
 					</S.ButtonWrapper2>
 					<S.IngredientWrapper>
-						<Ingredient />
-						<Ingredient />
-						<Ingredient />
-						<Ingredient />
-						<Ingredient />
-						<Ingredient />
-						<Ingredient />
-						<Ingredient />
-						<Ingredient />
+						<Ingredient type={"feed"} />
+						<Ingredient type={"feed"} />
+						<Ingredient type={"feed"} />
+						<Ingredient type={"feed"} />
+						<Ingredient type={"feed"} />
+						<Ingredient type={"feed"} />
+						<Ingredient type={"feed"} />
+						<Ingredient type={"feed"} />
+						<Ingredient type={"feed"} />
 					</S.IngredientWrapper>
 					<S.Description></S.Description>
 				</S.Info>
