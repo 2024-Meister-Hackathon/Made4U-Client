@@ -120,4 +120,11 @@ export const Recipe = styled.p`
 	}
 `;
 
+export const IngredientWrapper = styled.div`
+	display: flex;
+	width: auto;
+	overflow-x: scroll;
+	gap: 10px;
+`;
+
 export const Description = styled.p``;

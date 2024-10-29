@@ -1,8 +1,8 @@
 import React from "react";
-import Footer from "../../components/Footer";
+import { Post } from "../../components";
 
 const Temp = () => {
-	return <Footer />;
+	return <Post />;
 };
 
 export default Temp;

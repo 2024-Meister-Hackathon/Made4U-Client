@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import * as S from "./style";
 import Input from "../Input";
+import Ingredient from "../Ingredient";
 
 const Post = () => {
 	const [comActive, setComActive] = useState(false);
@@ -27,6 +28,18 @@ const Post = () => {
 						<S.ComButton onClick={() => setComActive(true)} />
 						<S.RecButton onClick={() => setRecActive(true)} />
 					</S.ButtonWrapper2>
+					<S.IngredientWrapper>
+						<Ingredient />
+						<Ingredient />
+						<Ingredient />
+						<Ingredient />
+						<Ingredient />
+						<Ingredient />
+						<Ingredient />
+						<Ingredient />
+						<Ingredient />
+					</S.IngredientWrapper>
+					<S.Description></S.Description>
 				</S.Info>
 				<S.Comment active={comActive}>
 					<div onClick={() => setComActive(false)}></div>
