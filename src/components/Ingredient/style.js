@@ -9,7 +9,7 @@ export const Container = styled.div`
 export const Img = styled.img`
 	width: 50px;
 	height: 50px;
-	border: 1px solid black;
+	border: ${({ type }) => (type === "feed" ? "1px solid black" : "none")};
 `;
 
 export const DetailBox = styled.div`
@@ -17,7 +17,7 @@ export const DetailBox = styled.div`
 	width: 200px;
 	justify-content: space-between;
 	align-items: center;
-	border: 1px solid black;
+	border: ${({ type }) => (type === "feed" ? "1px solid black" : "none")};
 `;
 
 export const TextWrapper = styled.div`
