@@ -1,8 +1,8 @@
 import React from "react";
-import Input from "../../components/Input";
+import Post from "../../components/Post";
 
 const Temp = () => {
-	return <Input />;
+	return <Post />;
 };
 
 export default Temp;
