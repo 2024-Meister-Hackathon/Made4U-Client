@@ -2,22 +2,18 @@ import styled from "@emotion/styled";
 
 export const Container = styled.div`
 	display: flex;
-	width: 500px;
-	margin: 15px;
-`;
-
-export const Img = styled.img`
-	width: 50px;
-	height: 50px;
-	border: ${({ type }) => (type === "feed" ? "1px solid black" : "none")};
+	width: ${({ type }) => (type === "feed" ? "19.19rem" : "100%")};
+	border-radius: 15px;
 `;
 
 export const DetailBox = styled.div`
 	display: flex;
-	width: 200px;
+	width: ${({ type }) => (type === "feed" ? "15rem" : "100%")};
+	height: 2.125rem;
 	justify-content: space-between;
 	align-items: center;
-	border: ${({ type }) => (type === "feed" ? "1px solid black" : "none")};
+	border-bottom: 1px solid var(--gray-200, #cfcfcf);
+	padding: 0.75rem 0.75rem 0.75rem 1.5rem;
 `;
 
 export const TextWrapper = styled.div`
@@ -26,5 +22,11 @@ export const TextWrapper = styled.div`
 `;
 
 export const Text = styled.h2`
-	font-size: 16px;
+	color: var(--gray-900, #1c1c1c);
+	font-size: 0.875rem;
+`;
+
+export const Counter = styled.div`
+	display: flex;
+	gap: 1rem;
 `;
