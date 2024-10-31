@@ -1,27 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import * as S from "./style";
+import { Home, Search, Write, Profile } from "../../SVG";
+import Subscribe from "../../SVG/Subscribe";
 
 const Footer = () => {
+	const [url] = useState("");
 	return (
-		<S.Container>
-			<S.NavWrapper>
-				<S.Nav to={"/feed"}>
-					<img src="" alt="피트" />
-				</S.Nav>
-				<S.Nav to={"/search"}>
-					<img src="" alt="탐색" />
-				</S.Nav>
-				<S.Nav to={"/write"}>
-					<img src="" alt="작성" />
-				</S.Nav>
-				<S.Nav to={"/subscribe"}>
-					<img src="" alt="구독" />
-				</S.Nav>
-				<S.Nav to={"/myPage"}>
-					<img src="" alt="마이페이지" />
-				</S.Nav>
-			</S.NavWrapper>
-		</S.Container>
+		<S.NavWrapper>
+			<S.Nav to={"/home"}>
+				<Home />
+			</S.Nav>
+			<S.Nav to={"/search"}>
+				<Search />
+			</S.Nav>
+			<S.Nav to={"/write"}>
+				<Write />
+			</S.Nav>
+			<S.Nav to={"/subscribe"}>
+				<Subscribe />
+			</S.Nav>
+			<S.Nav to={"/myPage"}>
+				<S.ProImg>
+					{url.length > 0 ? <img src={url} alt="프로필 사진" /> : <Profile />}
+				</S.ProImg>
+			</S.Nav>
+		</S.NavWrapper>
 	);
 };
 
